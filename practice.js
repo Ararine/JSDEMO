@@ -13,10 +13,16 @@ console.log("================================");
 let numm = 120;
 let a = numm / 10;
 let b = 0;
-if (a % 10 !== 0) {
-  b = 1;
-} else {
-  b = 0;
+// if (a % 10 == 0) {
+//   b = 0 ;
+// } else {
+//   b = 1;
+// }
+switch (a % 10) {
+  case 0:
+    b = 0;
+  default:
+    b = 1;
 }
 console.log(`a=${a}, b=${b}`);
 let c = parseInt(a) + b;
