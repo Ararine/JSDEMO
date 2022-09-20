@@ -10,12 +10,17 @@ switch (num % 10 == 0) {
 
 console.log("================================");
 // 문제 2
-let apple = 123;
-let i = '';
-for (let i = 0, b = 0; b > apple; i+=10) {
-    if(i + b < 130) break;
-  }
-console.log(`필요한 바구니의 수 : ${i}`);
+let numm = 120;
+let a = numm / 10;
+let b = 0;
+if (a % 10 !== 0) {
+  b = 1;
+} else {
+  b = 0;
+}
+console.log(`a=${a}, b=${b}`);
+let c = parseInt(a) + b;
+console.log(`필요한 바구니의 수 : ${c}`);
 
 console.log("================================");
 // 문제 3
@@ -55,18 +60,23 @@ switch (cnum % 10) {
 console.log(`차량번호의 끝자리가 ${cnum}인 차량은 ${day} 운행을 제한합니다.`);
 console.log("================================");
 // 문제 4
-let year = '';
-for(year = 2001; year <= 2012; year++) {
-    for(year % 4 == 0 && year % 100 !== 0) {
-        
+let year = "";
+for (year = 2001; year <= 2012; year++) {
+  if (year % 4 == 0 && year % 100 !== 0) {
+    if (year % 400 !== 0) {
+      console.log(year);
     }
+  }
 }
+
 console.log("================================");
 // 문제 5
-let x = '';
-let y = '';
-for(x = 0; 2 * x + 3 * y = 10; x++){
-    for(y = 0; 2 * x + 3 * y = 10; y++){
-        console.log(`x=${x}, y=${y}`)
+let x = "";
+let y = "";
+for (x = 0; x <= 10; x++) {
+  for (y = 0; y <= 10; y++) {
+    if (2 * x + 3 * y == 10) {
+      console.log(`x=${x}, y=${y}`);
     }
+  }
 }
