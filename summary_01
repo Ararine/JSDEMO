@@ -1,0 +1,25 @@
+identifier (식별자) : 프로그램 구현에 필요한 이름을 정의해 놓은 것 - 변수명, 함수명, 클래스명
+변수명, 함수명 - 카멜표기법 (camel notation)
+클래스명 - 파스칼 (pascal notation)
+
+variable (변수) : 데이터를 저장하기 위한 메모리 공간
+
+let num = 3 + 5 ;
+// + : 계산하기 위해 사용하는 기호를 연산자라고 하며
+// 3, 5 : 계산을 위해 사용되는 숫자를 피연산자라고 한다.
+
+keyword (예약어) - 프로그램에서 의미를 부여하여 정의해 놓은 단어
+변수 : var, let / 상수 : const
+
+operator (연산자) : 연산을 하기 위해 사용되는 기호 (산술, 비교, 논리, 대입)
+operand (피연산자) : 연산에 사용되는 데이터
+
+Data Type (자료형) - 데이터의 종류
+(1) Primitive Type (원시 타입)
+    숫자, 문자, 논리, undefined, null, Symbol
+
+(2) Reference Type (참조 타입)
+    배열[], 객체{}, function
+    ex) [10,20], {ko:90,en:80}
+
+hoisting (호이스팅) - 변수선언을 최상위로 끌어올리는 작업
