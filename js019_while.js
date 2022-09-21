@@ -19,6 +19,13 @@ while (j <= 5) {
   j++;
 }
 
+/* javascript는 존재론으로 프로그램이 돌아간다.
+while 문은 조건식을 생략할 수 없다.
+while(true){
+  console.log('test');
+}
+*/
+
 console.log("=================================");
 
 /*
