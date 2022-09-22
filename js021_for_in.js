@@ -39,6 +39,7 @@ for (let idx in city) {
 // {} 안에 있는 data 는 값만을 저장하는 객체이다.
 // a,b,c 는 속성명, 1,2,3 은 데이터
 let obj = { a: 1, b: 2, c: 3 };
+console.log(obj); //{ a: 1, b: 2, c: 3 }
 console.log(obj.a); //1
 console.log(obj.b); //2
 console.log(obj.c); //3

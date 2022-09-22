@@ -91,7 +91,7 @@ for (let i = 1; i <= 3; i++) {
     // console.log(`i=${i} j=${j}`);
     process.stderr.write(`i=${i} j=${j},`);
   }
-  process.stderr.write(`\f`);
+  process.stderr.write(`\n`);
 }
 // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String
 //  이스케이프 : 프로그램에서 주변장치를 컨트롤하기 위해서 사용되는 기능

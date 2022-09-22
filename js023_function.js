@@ -203,6 +203,7 @@ console.log(outerCall()); //NaN
 console.log(outerCall(3)); //53
 console.log(outerCall(4)); //54
 
+// 재귀함수
 function testA() {
   console.log("testA before");
   testB();
@@ -269,11 +270,17 @@ display4(1); //1, []
 display4(1, 2, 3, 4, 5); //1, [ 2, 3, 4, 5 ]
 
 console.log("========================================");
-// arguements 객체
+// arguments 객체
+// 함수 안에서만 기본으로 사용할 수 있는 자바스크립트 객체이다.
+// 함수 런타임 시점에 자동으로 생성되는 개체이며, 함수 코드 및 파라미터는 무관하게 자동 생성된다.
+// 함수 호출할 때 함수로 전달된 실제 인자들의 정보를 담고 있는 객체이다.
+// 함수 선언에서 파라미터로 정의한 변수 개수보다 실제 함수 호출할 때 전달하는 인수의 개수가 다를
+// 수 있는 자바스크립트의 특성을 고려해 만들어진 객체이다.
 function display5() {
   let result = 0;
   for (let i = 0; i < arguments.length; i++) {
     console.log(typeof arguments, arguments instanceof Array, arguments.callee);
+    //.callee 현재 실행되는 함수
     console.log(arguments[i]);
   }
 }
