@@ -138,4 +138,4 @@ const per = ages.filter(function (element, index) {
   return element >= 18;
 });
 
-console.log(`per : ${per}`);
+console.log(`per : ${per}`); //per : 32,33,40

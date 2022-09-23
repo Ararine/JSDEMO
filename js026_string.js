@@ -74,8 +74,7 @@ console.log(`charAt() : ${data.charAt(0)}`); //H
 console.log(`charCodeAt() : ${data.charCodeAt(0)}`); //72(Unicode value)
 
 data = "a, b, c, d, e";
-//.split() : 문자열을 나누워 준다.
-//.split(',') 은 배열 형태로 가져온다.
+//.split() : () 안에 내용을 제거하고 남은 부분을 배열로 리턴
 let arr = data.split("a, b,");
 for (let i of arr) console.log(i); // c, d, e
 
