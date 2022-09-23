@@ -13,11 +13,8 @@ protocal: ftp, domain: ftp.microsoft.com
 
 //[출력결과]를 참고하여 separator함수를 구현하세요.
 function separator(data) {
-  let a = data.replace("://", " "); // :// 제거
-  let b = a.indexOf(" "); // 공백 인덱스
-  let c = a.substring(0, b); // 앞의 값
-  let d = a.substring(b + 1, a.length + 1); //뒤의 값
-  console.log(`protocal: ${c}, domain: ${d}`);
+  let arr = data.split("://");
+  console.log(`protocal: ${arr[0]}, domain: ${arr[1]}`);
 }
 
 separator("http://www.daum.net");
@@ -41,15 +38,12 @@ let person2 = { name: "진여구", phone: "010-253-2253" };
 
 //출력결과를 참고하여 display()함수를 구현하세요
 function display(customer) {
-  let aN = customer.name; // data 이름
-  let aP = customer.phone; // data 전화번호
-  let lF = aP.indexOf("-"); // 범위 초기값
-  let lL = aP.indexOf("-", lF + 1); // 범위 마지막값
-  let mP = aP.substring(lF + 1, lL); // 중간 번호
-  let s = "*";
-  let sR = s.repeat(mP.length); // 중간 번호 개수만큼의 *
-  let cP = aP.replace(mP, sR); // 중간 번호 교체한 번호
-  console.log(`이름: ${aN}\n연락처: ${cP}`);
+  let start = customer.phone.indexOf("-");
+  let end = customer.phone.lastIndexOf("-");
+  console.log(`이름: ${customer.name}`);
+  let searchWord = customer.phone.substring(start + 1, end);
+  let phoneStar = "*".repeat(searchWord.length);
+  console.log(`연락처: ${customer.phone.replace(searchWord, phoneStar)}`);
 }
 display(person1);
 display(person2);

@@ -13,10 +13,10 @@ console.log(data.length);
 /*
     특정 범위 데이터를 리턴해주는 3가지 메소드
                        미만
-    1. substing(start, end);
+    1. .substing(start, end);
                       길이
-    2. substr(start, length);
-    3. slice(start, end);
+    2. .substr(start, length);
+    3. .slice(start, end);
 */
 
 data = "Apple, Banana, Kiwi";
@@ -54,13 +54,13 @@ console.log(data.replace(/blue/i, "red")); //Mr red has a blue house and a blue 
 console.log(data.replace(/blue/gi, "red")); //Mr red has a red house and a red car
 
 data = "Hello World";
-//toUpperCase() : 값을 모두 대문자로 출력한다.
+//.toUpperCase() : 값을 모두 대문자로 출력한다.
 console.log(`toUpperCase() : ${data.toUpperCase()}`); //HELLO WORLD
-//toLowerCase() : 값을 모두 소문자로 출력한다.
+//.toLowerCase() : 값을 모두 소문자로 출력한다.
 console.log(`toLowerCase() : ${data.toLowerCase()}`); //hello world
 console.log(`=======================================`);
 
-// a.concat(b) : 두 데이터 값을 붙여준다.
+// .concat(b) : 두 데이터 값을 붙여준다.
 let data2 = "javascript";
 console.log(`concat() : ${data.concat(data2)}`); //Hello Worldjavascript
 // ' ' 을 주면 공백이 생긴다.
@@ -68,18 +68,19 @@ console.log(`concat() : ${data.concat(" ", data2)}`); //Hello World javascript
 // '_' 을 주면 언더바가 생긴다.
 console.log(`concat() : ${data.concat("_", data2)}`); //Hello World_javascript
 
+//.charAt() : 해당 인덱스에 요소를 리턴
 console.log(`charAt() : ${data.charAt(0)}`); //H
 //.charCodeAt 하면 유니코드 값을 가져올 수 있다.
-console.log(`charAt() : ${data.charCodeAt(0)}`); //72(Unicode value)
+console.log(`charCodeAt() : ${data.charCodeAt(0)}`); //72(Unicode value)
 
-data = "a,b,c,d,e";
-//split() : 문자열을 나누워 준다.
+data = "a, b, c, d, e";
+//.split() : 문자열을 나누워 준다.
 //.split(',') 은 배열 형태로 가져온다.
-let arr = data.split(",");
-for (let i of arr) console.log(i);
+let arr = data.split("a, b,");
+for (let i of arr) console.log(i); // c, d, e
 
 data = "Mr Blue has a blue house and a blue car";
-// match() : 검색데이터와 일치하는 문자열 있으면 문자열 모두를 찾아서 배열로 리턴하고
+// .match() : 검색데이터와 일치하는 문자열 있으면 문자열 모두를 찾아서 배열로 리턴하고
 //           일치하는 문자열이 없으면 null로 리턴한다.
 let res = data.match(/blue/g);
 console.log(`match() : ${res} ${typeof res} ${res instanceof Array}`); //blue,blue / object / true
@@ -89,7 +90,7 @@ res = data.match(/red/g);
 console.log(`match() : ${res} ${typeof res} ${res instanceof Array}`); //null / object / false
 
 //
-//search() : 검색데이터와 일치하는 문자열이 있으면 처음의 index를 리턴하고
+//.search() : 검색데이터와 일치하는 문자열이 있으면 처음의 index를 리턴하고
 //           일치하는 문자열이 없으면 -1을 리턴한다.
 res = data.search(/blue/g);
 console.log(`search() : ${res}`); //14
@@ -98,7 +99,7 @@ res = data.search(/red/g);
 console.log(`search() : ${res}`); //-1
 
 data = "Mr Blue has a blue house and a blue car";
-//indexOf() : 지정된 값의 인덱스를 리턴
+//.indexOf() : 지정된 값의 인덱스를 리턴
 console.log(data.indexOf("M")); //0
 console.log(data.indexOf("B")); //3
 
@@ -122,7 +123,7 @@ for (let pos = 0; pos < data.length; pos++) {
   console.log(pos);
 }
 
-//repeat() : 반복된 값을 리턴
+//.repeat() : 반복된 값을 리턴
 let text = "korea";
 console.log(text.repeat(10)); //koreakoreakoreakoreakoreakoreakoreakoreakoreakorea
 
@@ -131,7 +132,7 @@ console.log(text.repeat(10)); //**********
 
 let text2 = "  korea  ";
 console.log(text2.length); // 9
-//trim().length : 양쪽의 불필요한 공백을 제거한다.
+//.trim().length : 양쪽의 불필요한 공백을 제거한다.
 //                사이의 공백은 제거되지 않는다.
 console.log(text2.trim().length); //5
 

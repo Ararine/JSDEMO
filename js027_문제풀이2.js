@@ -36,8 +36,7 @@ function display(customer) {
   let lF = aP.indexOf("-"); // 범위 초기값
   let lL = aP.indexOf("-", lF + 1); // 범위 마지막값
   let mP = aP.substring(lF + 1, lL); // 중간 번호
-  let s = "*";
-  let sR = s.repeat(mP.length); // 중간 번호 개수만큼의 *
+  let sR = "*".repeat(mP.length); // 중간 번호 개수만큼의 *
   let cP = aP.replace(mP, sR); // 중간 번호 교체한 번호
   console.log(`이름: ${aN}\n연락처: ${cP}`);
 }
