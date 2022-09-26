@@ -87,9 +87,25 @@ aNode = pNode.firstElementChild;
 console.log(aNode);
 //<img src="images/gosu.jpg" alt="영화배우 고수">
 
+/////////////////////////////////////////////
+//객체.getAttribute("속성명"), 객체.setAttribute("속성명", "값")
+//객체.속성명 , 객체.속성명="값"
+
 let aAttrNode = aNode.getAttribute("src");
 console.log(aAttrNode);
 //images/gosu.jpg
 
 aAttrNode = aNode.src;
 console.log(aAttrNode);
+//http://127.0.0.1:5500/images/gosu.jpg
+//src의 경우는 전체경로가 나온다.
+
+//                  속성명 ,  속성값
+aNode.setAttribute("title", "스타배우");
+//<img src="images/gosu.jpg" alt="영화배우 고수" title="스타배우">
+console.log(aNode.getAttribute("title")); //스타배우
+
+aNode.id = "imgGosu";
+console.log(aNode.id);
+
+//https://d2.naver.com/helloworld/59361

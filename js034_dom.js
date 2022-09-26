@@ -32,8 +32,11 @@ function process() {
   //                     input name
 
   console.log(fname);
+  //<input type="text" name="fname" placeholder="이름입력" value="홍길동">
   console.log(fname.value); //입력한 값
+  //asa
   console.log(fname.defaultValue); //저장된 값
+  //홍길동
 
   //[object HTMLInputElement]
   document.write(fname);
