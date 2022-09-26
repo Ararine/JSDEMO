@@ -282,6 +282,7 @@ function display5() {
     // console.log(typeof arguments, arguments instanceof Array, arguments.callee);
     //.callee 현재 실행되는 함수
     console.log(arguments[i]);
+    // console.log(arguments.length);
   }
 }
 
