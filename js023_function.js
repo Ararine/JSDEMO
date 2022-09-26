@@ -279,12 +279,12 @@ console.log("========================================");
 function display5() {
   let result = 0;
   for (let i = 0; i < arguments.length; i++) {
-    console.log(typeof arguments, arguments instanceof Array, arguments.callee);
+    // console.log(typeof arguments, arguments instanceof Array, arguments.callee);
     //.callee 현재 실행되는 함수
     console.log(arguments[i]);
   }
 }
 
-display5(1, 2);
+// display5(1, 2);
 // display5(3);
-// display5(4, 5, 6, 7, 9);
+display5(4, 5, 6, 7, 9);

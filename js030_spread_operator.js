@@ -1,5 +1,9 @@
 // js030_spread_operator.js
 
+//ES6
+//Spread Operator = 스프레드 연산자 = 전개연산자 = 펼침연산자
+//형태 : (...변수)
+
 ////////////////////////////////////
 //[1] 배열에서의 Spread Operator
 

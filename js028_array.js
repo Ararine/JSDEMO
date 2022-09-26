@@ -132,7 +132,7 @@ function getSum(total, num) {
 const sum = numbers.reduce(getSum);
 console.log(`sum : ${sum}`); //sum : 54
 
-//.filter 조건을 리턴
+//.filter 조건이 true인 값을 리턴
 const ages = [32, 33, 16, 40];
 const per = ages.filter(function (element, index) {
   return element >= 18;

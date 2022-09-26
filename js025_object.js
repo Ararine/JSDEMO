@@ -20,12 +20,12 @@ console.log(typeof nObj.toString()); // string
 console.log(typeof data.toString()); // string
 console.log(typeof nObj.toString()); // string
 
+// javascript 내에서는 object 를 계산했을 때 자동으로 number 로 변환시켜준다.
 console.log(data + fData); // number + number = 20
 console.log(data + nObj); // number + object = 20
 
 // Number -> number
 // object -> primitive
-// javascript 내에서는 object 를 계산했을 때 자동으로 number 로 변환시켜준다.
 console.log(typeof nObj.valueOf()); // number
 console.log(typeof new String("javascript")); // object
 console.log(typeof new String("javascript").valueOf()); // string
@@ -38,7 +38,7 @@ console.log(parseInt(10.25)); // 10
 // 필요한 경우 객체를 생성해 사용할 수 있다.
 // String, Date, Array, Math, RegExp Object, ... etc
 
-// Object 는 객체는 최상위 객체이다.
+// Object 객체는 최상위 객체이다.
 
 // Number
 // 정수표현 : int, long, byte, short
