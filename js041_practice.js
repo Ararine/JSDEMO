@@ -21,9 +21,9 @@ btn.onclick = () => {
     " " +
     hours +
     ":" +
-    (minutes < 10 ? "0" + minutes : minutes) +
+    minutes +
     ":" +
-    (seconds < 10 ? "0" + seconds : seconds);
+    seconds;
   console.log(pNode);
   return false;
 };
