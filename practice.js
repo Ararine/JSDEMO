@@ -1,14 +1,13 @@
-data = "Mr Blue has a blue house and a blue car";
-
-// for (let i = 0; i < data.length; i++) {
-//   i = data.indexOf("blue", i);
-//   if (i == -1) break;
-//   console.log(i);
-// }
-
-let i = -1;
-do {
-  i++;
-  i = data.indexOf("blue", i);
-  console.log(i);
-} while (i != -1);
+let btn = document.getElementsByTagName("button")[0];
+btn.onclick = process;
+let chk = true;
+function process() {
+  let divNode = document.getElementsByTagName("div")[0];
+  if (chk) {
+    divNode.style.backgroundColor = "blue";
+    chk = false;
+  } else {
+    divNode.style.backgroundColor = "red";
+    chk = true;
+  }
+}

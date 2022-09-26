@@ -7,10 +7,11 @@ let b = 4;
 let sum = 0;
 
 sum = a + b;
-console.log(`sum=${sum}`);
+console.log(`sum=${sum}`); //sum = 7
 
 let data = 0;
 data = data + a;
+console.log(data);
 data += a; // data + a 에 비해 data += a 가 속도가 더 빠르다.
 console.log(`data=${data}`);
 
@@ -22,3 +23,7 @@ let y = 8;
 let z = 10;
 let result = x > y ? x++ : y++;
 console.log(`result=${result}, x=${x}, y=${y}`); // result=8, x=5, y=9
+
+let tru = x < y; // true
+let num = 10;
+console.log(num + tru); // 11
