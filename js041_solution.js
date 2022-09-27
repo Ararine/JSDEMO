@@ -1,5 +1,3 @@
-// js041_today.js
-
 let btn = document.getElementsByTagName("button")[0];
 
 btn.onclick = () => {
@@ -11,18 +9,8 @@ btn.onclick = () => {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  pNode =
-    years +
-    "-" +
-    months +
-    "-" +
-    datE +
-    " " +
-    hours +
-    ":" +
-    (minutes < 10 ? "0" + minutes : minutes) +
-    ":" +
-    (seconds < 10 ? "0" + seconds : seconds);
-  console.log(pNode);
-  return false;
+
+  pNode.innerText = `${years}-${months}-${datE} ${hours}:${
+    minutes < 10 ? "0" + minutes : minutes
+  }:${seconds < 10 ? "0" + seconds : seconds}`;
 };

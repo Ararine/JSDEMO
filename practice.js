@@ -11,3 +11,23 @@ function process() {
     chk = true;
   }
 }
+
+let div = document.getElementsByTagName("div")[0];
+div.onmouseover = change1;
+
+function change1() {
+  if (chk) {
+    div.style.backgroundColor = "green";
+  } /*else {
+    div.onmouseout - change2;
+    function change2
+  }*/
+}
+
+div.onmouseout = change2;
+
+function change2() {
+  if (chk) {
+    div.style.backgroundColor = "yellow";
+  }
+}
