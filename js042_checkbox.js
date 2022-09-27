@@ -33,10 +33,10 @@ document.frm.allCheck.onclick = function () {
   });
   */
 
-  let myThis = this; //document.frm.allCheck
-
   //Anonymous Function
   //Anonymous Function 에서 this 는 window 객체를 의미함
+
+  let myThis = this; //document.frm.allCheck
 
   /*
   checkgroup.forEach(function (element) {
@@ -50,8 +50,8 @@ document.frm.allCheck.onclick = function () {
   //   console.log(`${checkgroup}`); //[object NodeList]
 
   //   let myArray = Array.from(checkgroup);
-  //   // [object HTMLInputElement],[object HTMLInputElement],[object HTMLInputElement]
   //   //   console.log(`${myArray}`);
+  //   // [object HTMLInputElement],[object HTMLInputElement],[object HTMLInputElement]
 
   //   /*
   //   checkgroup.map(function (element) {
