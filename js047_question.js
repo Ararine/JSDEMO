@@ -17,7 +17,9 @@ for (let i = 0; i < 6; i++) {
   //   console.log(num, list);
   result.push(num);
 }
-result.sort();
+result.sort((a, b) => {
+  return a - b;
+});
 console.log("결과", result);
 
 // for (let i = 0; i < 6; i++) {

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js050_main_popup.html</title>
+    <style>
+      #popup {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        position: fixed;
+        left: 30%;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        다른 것보다도 최근의 경제상황이나 이런 게 굉장히 어렵고 이런데 제발 좀
+        다들 정신을 차리고 이준석 잡기가 아니라 물가 잡기, 환율 잡기에 나섰으면
+        하는 그런 생각입니다. 보니까 라면 가격 같은 경우도 15% 가까이 올랐고
+        휘발유 가격도 아직까지 높고 그리고 또 환율 같은 경우에는 1430원을
+        넘어섰던데 경제위기 상황인데 어떻게 이렇게 정치적인 파동 속에서 우리가
+        계속 가야 되는지 의아하고 제가 이번 가처분 결정으로 인해서 모든 게
+        종식됐으면 하는 생각이고 사실 지난번에 결정 때 이미 끝났어야 되는데 왜
+        이렇게 정치 파동을 이어나가는지 모르겠습니다.
+      </p>
+      <div id="popup">
+        <img src="images/popup.jpg" usemap="#pop" />
+      </div>
+      <map name="pop" id="pop">
+        <!--coors = 'x start, y start, x end, y end'-->
+        <area
+          shape="rect"
+          coords="255,332,290,345"
+          href="#"
+          alt="창닫기"
+          onclick="window.close()"
+        />
+      </map>
+    </div>
+
+    <script>
+      let close = document.querySelector("map#pop area");
+      close.onclick = () => {
+        let popup = document.querySelector("div#popup");
+        popup.style.width = "0px";
+        popup.style.height = "0px";
+        popup.style.visibility = "hidden";
+      };
+    </script>
+  </body>
+</html>
