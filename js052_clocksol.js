@@ -17,7 +17,7 @@ let watchTime = () => {
   const hour = leftPad(present.getHours());
   const minute = leftPad(present.getMinutes());
   const second = leftPad(present.getSeconds());
-  console.log(`${hour}-${minute}-${second}`);
+  // console.log(`${hour}-${minute}-${second}`);
 
   setText(`#hours`, hour);
   setText(`#minutes`, minute);
